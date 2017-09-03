@@ -1,0 +1,24 @@
+{
+  "name": "0_25_Mongo_Test_01",
+  "version": "1.0.0",
+  "description": "Mongo DB Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancn21th/0_25_Mongo_Test_01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fancn21th/0_25_Mongo_Test_01/issues"
+  },
+  "homepage": "https://github.com/fancn21th/0_25_Mongo_Test_01#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "mongodb": "^2.2.31"
+  }
+}

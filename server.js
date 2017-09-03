@@ -46,18 +46,13 @@ async.waterfall([
     },
 
     function (inserted_docs, cb) {
-        console.log("I inserted a document!!");
+        console.log("I inserted all albums!");
         photos_coll.insertMany(pix, cb);
     },
 
     function (inserted_docs, cb) {
         console.log("I inserted all my photos!");
         cb(null)
-
-        // photos_coll.updateOne(
-        //     { filename: "photo_003.jpg", albumid: "australia2010"},
-        //     { $set: { description: "kangaroos" } },
-        //     cb);
     },
 
 ], function (err, results) {
