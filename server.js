@@ -54,6 +54,19 @@ async.waterfall([
         console.log("I inserted all my photos!");
         cb(null)
     },
+    function (cb) {
+        var cursor = albums_coll.find()
+
+        cursor.on("data", (doc) => {
+            console.log(doc);
+        });
+
+        cursor.on("error", cb);
+
+        cursor.on("end", () => {
+            cb(null);
+        });
+    }
 
 ], function (err, results) {
     console.log("Done!");
